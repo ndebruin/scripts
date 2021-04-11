@@ -3,7 +3,6 @@ A dumping ground for various shell scripts I write
 
 # smart-email.sh
 Takes a single argument for the name of a drive
-EX:
 ```
 ./smart-email.sh sda
 ```
