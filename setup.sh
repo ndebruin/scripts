@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPOURL=https://raw.githubusercontent.com/draigon0/scripts/init/main
+REPOURL=https://raw.githubusercontent.com/draigon0/scripts/main/init
 
 mkdir .ssh
 cd .ssh
