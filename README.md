@@ -19,3 +19,7 @@ Usage: ./youtube-dl-auto.sh [--artist] [--album] [youtube url]
         --album         Specify Album for metadata
         youtube url     Playlist of music you would like to download
 ```
+
+# setup.sh
+Setup script for setting up a new server, with SSH Keys, packages, and CAs.
+Simply pull and run.
