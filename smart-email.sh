@@ -1,10 +1,11 @@
 #!/bin/bash
 
 EMAIL="<DESTINATION EMAIL>"
+SERVER="<SERVER NAME>"
+
 FILE="full.tmp"
 DATA="data.tmp"
 OUTPUT="email.tmp"
-SERVER="<SERVER NAME>"
 
 smartctl -a /dev/$1 > $FILE
 smartctl -A /dev/$1 > $DATA
