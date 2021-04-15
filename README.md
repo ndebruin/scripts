@@ -7,7 +7,7 @@ Takes a single argument for the name of a drive.
 ```
 ./smart-email.sh sda
 ```
-Just provide the short name, do not provide the full path of ``/dev/sda``
+Just provide the short name, do not provide the full path of ``/dev/sda``.
 Requires access to ``smartctl`` and ``mail``.
 
 # youtube-dl-auto.sh
