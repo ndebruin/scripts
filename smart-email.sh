@@ -7,8 +7,8 @@ FILE="full.tmp"
 DATA="data.tmp"
 OUTPUT="email.tmp"
 
-smartctl -a /dev/$1 > $FILE
-smartctl -A /dev/$1 > $DATA
+/usr/sbin/smartctl -a /dev/$1 > $FILE
+/usr/sbin/smartctl -A /dev/$1 > $DATA
 
 tail -n +4 $FILE > $FILE.new
 tail -n +7 $DATA > $DATA.new
