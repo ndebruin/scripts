@@ -25,3 +25,8 @@ Usage: ./youtube-dl-auto.sh [--artist] [--album] [youtube url]
 Setup script for setting up a new server, with SSH Keys, packages, and CAs.
 Simply pull and run.
 Requires ``sudo``.
+
+# ffmpeg-resize-video.sh
+Script to resize a mp4 file to a specific size.
+
+Usage: ``./ffmpeg-resize-video.sh original-video.mp4 $SIZE`` size being in MB.
