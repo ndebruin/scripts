@@ -20,13 +20,17 @@ Usage: ./youtube-dl-auto.sh [--artist] [--album] [youtube url]
         --album         Specify Album for metadata
         youtube url     Playlist of music you would like to download
 ```
+Requires ``youtube-dl``, ``ffmpeg`` and ``bash`` or compatible shell.
 
 # setup.sh
 Setup script for setting up a new server, with SSH Keys, packages, and CAs.
-Simply pull and run.
+Simply pull and run. Only tested on Debian 10, will likely work on derivatives.
+
 Requires ``sudo``.
 
 # ffmpeg-resize-video.sh
 Script to resize a mp4 file to a specific size.
 
 Usage: ``./ffmpeg-resize-video.sh original-video.mp4 $SIZE`` size being in MB.
+
+Obviously requires ffmpeg.
