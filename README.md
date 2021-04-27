@@ -30,6 +30,6 @@ Requires ``sudo``.
 # ffmpeg-resize-video.sh
 Script to resize a mp4 file to a specific size.
 
-Usage: ``./ffmpeg-resize-video.sh original-video.mp4 $SIZE`` size being in MB.
+Usage: ``./ffmpeg-resize-video.sh original-video.mp4 SIZE`` size being in MB.
 
 Obviously requires ffmpeg.
