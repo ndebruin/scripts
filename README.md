@@ -25,7 +25,6 @@ Requires ``youtube-dl``, ``ffmpeg`` and ``bash`` or compatible shell.
 # setup.sh
 Setup script for setting up a new server, with SSH Keys, packages, and CAs.
 Simply pull and run. Only tested on Debian 10, will likely work on derivatives.
-
 Requires ``sudo``.
 
 # ffmpeg-resize-video.sh
