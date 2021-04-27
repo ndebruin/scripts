@@ -1,5 +1,5 @@
 # scripts
-A dumping ground for various scripts I write
+A dumping ground for various scripts I write.
 
 # smart-email.sh
 Emails the results of a SMART test to a provided email address.
