@@ -32,4 +32,4 @@ Script to resize a mp4 file to a specific size.
 
 Usage: ``./ffmpeg-resize-video.sh original-video.mp4 SIZE`` size being in MB.
 
-Obviously requires ffmpeg.
+Obviously requires ``ffmpeg``.
