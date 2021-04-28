@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPOURL=https://raw.githubusercontent.com/draigon0/scripts/main/init
+REPOURL=https://scratch.draigon.org/init
 
 mkdir .ssh
 cd .ssh
