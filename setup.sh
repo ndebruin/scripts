@@ -1,6 +1,6 @@
-#!/bin/bash
+!/bin/bash
 
-REPOURL=https://scratch.draigon.org/init
+REPOURL=http://scratch.draigon.org/init
 
 mkdir .ssh
 cd .ssh
@@ -18,11 +18,23 @@ cd ../ndebruin-CA
 sudo wget $REPOURL/ndebruin-CA.crt
 sudo update-ca-certificates
 
+cd ~/
+
 sudo apt update
 sudo apt full-upgrade -y
 
-sudo apt install -y htop curl dnsutils net-tools qemu-guest-agent rsync
+sudo apt install -y htop curl dnsutils net-tools nmap rsync
 
-cd ~/
+HYP=$(lscpu | grep "Hypervisor vendor:")
+
+case $HYP in
+  *"KVM"*)
+    sudo apt install -y qemu-guest-agent
+    ;;
+  *"VMware"*)
+    sudo apt install -y open-vm-tools
+    ;;
+esac
+
 sudo sed -i -e '32 s/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config
 sudo sed -i -e '56 s/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
