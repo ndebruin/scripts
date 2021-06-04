@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 REPOURL=http://scratch.draigon.org/init
 
