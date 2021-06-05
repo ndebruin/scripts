@@ -10,6 +10,16 @@ Takes a single argument for the name of a drive.
 Just provide the short name, do not provide the full path of ``/dev/sda``.
 Requires access to ``smartctl`` and ``mail``.
 
+# smart-email-truenas.sh
+Emails the results of a SMART test to a provided email address.
+Takes a single argument for the name of a drive.
+Changed path of ``smartctl`` to what it is on my TrueNAS box.
+```
+./smart-email.sh ada0
+```
+Just provide the short name, do not provide the full path of ``/dev/ada0``.
+Requires access to ``smartctl`` and ``mail``.
+
 # youtube-dl-auto.sh
 Downloads a playlist off of youtube, and populates metadata, including cover art.
 ```
@@ -26,6 +36,10 @@ Requires ``youtube-dl``, ``ffmpeg`` and ``bash`` or compatible shell.
 Setup script for setting up a new server, with SSH Keys, packages, and CAs.
 Simply pull and run. Only tested on Debian 10, will likely work on derivatives.
 Requires ``sudo``.
+
+# speedtest.sh
+Work of: https://github.com/rsvp/speedtest-linux
+I have a copy of it here because hey, that's how open source works.
 
 # ffmpeg-resize-video.sh
 Script to resize a mp4 file to a specific size.
