@@ -2,7 +2,7 @@
 
 #SET THESE VARIABLES
 SERVEREMAIL="<PLEASE SET>" #email of server
-EMAIL="<PLEASE SET>" # receiving email
+EMAIL="<PLEASE SET>" #receiving email
 SERVER="<PLEASE SET>" #server name
 
 #DO NOT TOUCH
