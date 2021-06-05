@@ -19,7 +19,7 @@ Fixed formatting to handle strange mail handling on TrueNAS, and changed path of
 ./smart-email.sh ada0
 ```
 Just provide the short name, do not provide the full path of ``/dev/ada0``.
-Requires access to ``smartctl`` and ``mail``.
+Requires access to ``smartctl`` and ``sendmail``.
 
 # youtube-dl-auto.sh
 Downloads a playlist off of youtube, and populates metadata, including cover art.
