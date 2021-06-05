@@ -13,7 +13,8 @@ Requires access to ``smartctl`` and ``mail``.
 # smart-email-truenas.sh
 Emails the results of a SMART test to a provided email address.
 Takes a single argument for the name of a drive.
-Changed path of ``smartctl`` to what it is on my TrueNAS box.
+
+Fixed formatting to handle strange mail handling on TrueNAS, and changed path of ``smartctl``.
 ```
 ./smart-email.sh ada0
 ```
