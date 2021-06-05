@@ -16,7 +16,7 @@ Takes a single argument for the name of a drive.
 
 Fixed formatting to handle strange mail handling on TrueNAS, and changed path of ``smartctl``.
 ```
-./smart-email.sh ada0
+./smart-email-truenas.sh ada0
 ```
 Just provide the short name, do not provide the full path of ``/dev/ada0``.
 Requires access to ``smartctl`` and ``sendmail``.
