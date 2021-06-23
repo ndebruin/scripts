@@ -23,7 +23,7 @@ cd ~/
 sudo apt update
 sudo apt full-upgrade -y
 
-sudo apt install -y htop curl dnsutils net-tools nmap rsync
+sudo apt install -y htop curl dnsutils net-tools nmap rsync openssh-server
 
 HYP=$(lscpu | grep "Hypervisor vendor:")
 
