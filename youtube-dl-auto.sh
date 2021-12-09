@@ -31,19 +31,18 @@ for arg in "$@"; do
         ;;
     -h | --help)
         usage
-        exit 1
         ;;
     esac
 done
 
 if [[ $ARTIST == "" ]]; then
     echo "You must provide an Artist";
-    exit 1;
+    usage;
 fi
 
 if [[ $ALBUM == "" ]]; then
     echo "You must provide an Album Name";
-    exit 1;
+    usage;
 fi
 
 youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output "%(autonumber)s - %(title)s.%(ext)s" $1
@@ -51,6 +50,7 @@ youtube-dl --write-thumbnail --playlist-items 1 --skip-download --output "cover"
 ffmpeg -i cover.webp cover.jpg
 rm cover.webp
 COVER="cover.jpg"
+read -p "Please confirm that song names are correct for the album. If they are not, then please correct them. [y] "
 LIST=$(ls *.mp3)
 IFS=$'\n'
 for LINE in $LIST
@@ -88,4 +88,5 @@ unset IFS
 mkdir "$ARTIST - $ALBUM"
 mv *.mp3 "$ARTIST - $ALBUM/"
 mv cover.jpg "$ARTIST - $ALBUM/"
+ffmpeg -i "$ARTIST - $ALBUM/cover.jpg" "$ARTIST - $ALBUM/$ARTIST - $ALBUM.png"
 exit 0
