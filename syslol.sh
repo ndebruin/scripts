@@ -1,5 +1,5 @@
 #!/bin/bash
-url="https://discord.com/api/webhooks/901150969063153724/U6S8mAjK2y2jyIph9ncybAx_2HZRs6sHiGetTeuGnGv8p7DLJ-z7f1y1voEhAda2cCMY"
+
 
 while true
 do
