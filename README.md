@@ -33,15 +33,6 @@ Usage: ./youtube-dl-auto.sh [--artist] [--album] [youtube url]
 ```
 Requires ``youtube-dl``, ``ffmpeg`` and ``bash`` or compatible shell.
 
-# setup.sh
-Setup script for setting up a new server, with SSH Keys, packages, and CAs.
-Simply pull and run. Only tested on Debian 10, will likely work on derivatives.
-Requires ``sudo``.
-
-# speedtest.sh
-Work of: https://github.com/rsvp/speedtest-linux
-I have a copy of it here because hey, that's how open source works.
-
 # ffmpeg-resize-video.sh
 Script to resize a mp4 file to a specific size.
 
