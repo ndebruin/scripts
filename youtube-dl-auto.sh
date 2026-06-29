@@ -45,8 +45,8 @@ if [[ $ALBUM == "" ]]; then
     usage;
 fi
 
-youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output "%(autonumber)s - %(title)s.%(ext)s" $1
-youtube-dl --write-thumbnail --playlist-items 1 --skip-download --output "cover" $1
+yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 --output "%(autonumber)s - %(title)s.%(ext)s" $1
+yt-dlp --write-thumbnail --playlist-items 1 --skip-download --output "cover" $1
 ffmpeg -i cover.webp cover.jpg
 rm cover.webp
 COVER="cover.jpg"
@@ -76,7 +76,7 @@ for LINE in $LIST
 do
     NAME=${LINE%.*}
 	EXT=".${LINE##*.}"
-	TRACK=${NAME%-*}
+	TRACK=${NAME% -*}
     TITLE=${NAME#*- }
     echo "$TRACK    $TITLE"
     ffmpeg -i $LINE -metadata "TITLE=$TITLE" -metadata "TRACK=$TRACK" -metadata "ARTIST=$ARTIST" -metadata "ALBUM=$ALBUM" -c copy "$LINE.new.mp3"
